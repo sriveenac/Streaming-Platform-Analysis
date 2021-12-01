@@ -12,4 +12,23 @@ pip install requirements.txt
 
 ```
 ## Repo File Structure 
-tree -d 
+```bash
+├── Data
+│   ├── Instructions.txt                        <- Instructions for how to download the most recent scrape of the data from Kaggle
+│   ├── all_data_processed.csv                  <- combined and pre-processed dataset for all 4 platforms after running pre_processing.py
+│   ├── amazon_prime_titles.csv                 <- raw Amazon Prime dataset from kaggle after following instruction in instructions.txt
+│   ├── country_analyis_processed.csv           <- combined and pre-processed dataset for country level analysis after running pre_processing.py
+│   ├── disney_plus_titles.csv                  <- raw Disney+ dataset from kaggle after following instruction in instructions.txt
+│   ├── hulu_titles.csv                         <- raw Hulu dataset from kaggle after following instruction in instructions.txt
+│   ├── master_processed.csv                    <- combined and pre-processed dataset for visualizations (removing null rows + director/cast data)
+│   ├── netflix_titles.csv                      <- raw Netflix dataset from kaggle after following instruction in instructions.txt
+│   ├── pre_processing.py                       <- File to pre-process and create sub_tables for analysis
+│   └── release_year_analysis_processed.csv     <- combined and pre-processed dataset for release year analysis after running pre_processing.py
+├── recommender_gui
+│   ├── Instructions.txt                        <- Instructions on how to run the recommender GUI
+│   └── recommender_gui.py                      
+├── ECE143 Final Presentation.pdf
+├── ECE143_Final (1).ipynb                      <- Visualization Notebook
+├── README.md
+└── requirements.txt
+```
