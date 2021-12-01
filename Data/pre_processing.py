@@ -8,21 +8,21 @@ import pandas as pd
 import numpy as np
 
 
-# In[ ]:
+# In[10]:
 
 
-netflix = pd.read_csv('Data/netflix_titles.csv')
+netflix = pd.read_csv('netflix_titles.csv')
 netflix['platform'] = 'netflix'
-prime = pd.read_csv('Data/amazon_prime_titles.csv')
+prime = pd.read_csv('amazon_prime_titles.csv')
 prime['platform'] = 'prime'
-disney = pd.read_csv('Data/disney_plus_titles.csv')
+disney = pd.read_csv('disney_plus_titles.csv')
 disney['platform'] = 'disney'
-hulu = pd.read_csv('Data/hulu_titles.csv')
+hulu = pd.read_csv('hulu_titles.csv')
 hulu['platform'] = 'hulu'
 all = pd.concat([netflix,prime,disney,hulu])
 
 
-# In[ ]:
+# In[11]:
 
 
 #more clean up for rating and duration
@@ -38,7 +38,7 @@ all['rating']=all['rating'].replace(['PG','TV-PG','7+','TV-Y7','TV-Y7-FV'],[7]*5
 all['rating']=all['rating'].replace(['UR','NR','UNRATED','NOT RATED','NOT_RATE','TV-NR','nan'],['NOT RATED']*7)
 
 
-# In[ ]:
+# In[12]:
 
 
 # Data clean up
@@ -46,7 +46,7 @@ all.duration = all.duration.str.split(' ')
 def get_val(x,y = 'Seasons'):
     if isinstance(x,float):
         pass
-      elif x[1] == y or x[1] == y[:-1]:
+    elif x[1] == y or x[1] == y[:-1]:
         return x[0]
 all["num_seasons"] = all.duration.apply(lambda x: get_val(x, 'Seasons'))
 all["length"] = all.duration.apply(lambda x: get_val(x, 'mins') )
@@ -56,7 +56,7 @@ all.length = all.length.astype(float)
 all.num_seasons = all.num_seasons.astype(float)
 
 
-# In[ ]:
+# In[13]:
 
 
 master = all.loc[:,['show_id', 'type', 'title','release_year','rating','duration','listed_in','description','platform']]
@@ -66,11 +66,11 @@ country = all[~all.platform.isin(['prime', 'hulu'])] # analyze the countries
 added = all[~all.platform.isin(['prime'])] # when things are being added
 
 
-# In[ ]:
+# In[14]:
 
 
-all.to_csv('all_data_processed.csv')
-master.to_csv('master_processed.csv')
-country.to_csv('country_analyis_processed.csv')
-added.to_csv('release_year_analysis_processed.csv')
+all.to_csv('all_data_processed.csv',index = False)
+master.to_csv('master_processed.csv',index = False)
+country.to_csv('country_analyis_processed.csv',index = False)
+added.to_csv('release_year_analysis_processed.csv',index = False)
 
