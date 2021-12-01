@@ -1,0 +1,20 @@
+Link to dataset: 
+  Netflix: https://www.kaggle.com/shivamb/netflix-shows
+  Amazon Prime: https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows
+  Disney Plus: https://www.kaggle.com/shivamb/disney-movies-and-tv-shows
+  Hulu: https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows
+  
+To download dataset:
+  Generate Kaggle API token and save it to directory "path/to/kaggle.json"
+
+Run the following code on jupyter or on terminal:
+  ! pip install -q kaggle
+  ! chmod 600 ~/.kaggle/kaggle.json
+  ! kaggle datasets download -d shivamb/netflix-shows --unzip
+  ! kaggle datasets download -d shivamb/amazon-prime-movies-and-tv-shows --unzip
+  ! kaggle datasets download -d shivamb/hulu-movies-and-tv-shows --unzip
+  ! kaggle datasets download -d shivamb/disney-movies-and-tv-shows --unzip
+  ! kaggle datasets download -d shivamb/disney-movies-and-tv-shows --unzip
+  
+OR
+Download datasets from the repo
