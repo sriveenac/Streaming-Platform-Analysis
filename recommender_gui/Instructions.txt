@@ -1,0 +1,2 @@
+To run the gui, simply run the following in your terminal while in the director where you save recommender_gui.py:
+  python3 recommender_gui.py
