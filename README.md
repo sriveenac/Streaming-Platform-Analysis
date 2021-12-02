@@ -26,6 +26,9 @@ pip install requirements.txt
 │   └── release_year_analysis_processed.csv     <- combined and pre-processed dataset for release year analysis after running pre_processing.py
 ├── recommender_gui
 │   ├── Instructions.txt                        <- Instructions on how to run the recommender GUI
+│   ├── rs_header.png
+│   ├── quiz_header.png
+│   ├── heading.png
 │   └── recommender_gui.py                      
 ├── ECE143 Final Presentation.pdf
 ├── ECE143_Final (1).ipynb                      <- Visualization Notebook
