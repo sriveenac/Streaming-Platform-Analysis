@@ -35,3 +35,30 @@ pip install requirements.txt
 ├── README.md
 └── requirements.txt
 ```
+
+## Running the Code
+  1) Clone or download the repo into your local or virtual environment 
+  2) Download the most recent datatsets as explained in Data/instructions.txt or use the datasets in the Data directory that have been downloaded on December 1,2021
+
+### Recommender GUI
+  1) Open a terminal window and go into the recommender_gui directory in this project 
+  2) run the following on your terminal or simply run the recommender.py file 
+      ```
+      python3 recommender_gui.py
+      ```
+### Data analysis and Visualization
+  1) Simply run the code in the jupyter notebook 
+
+## Third Party Modules Used: 
+  1) Numpy
+  2) Pandas 
+  3) Tkinter 
+  4) tkinter.ttk
+  5) sklearn.feature_extraction.text
+  6) sklearn.metrics.pairwise
+  7) Pillow (PIL) 
+  8) matplotlib.pyplot 
+  9) seaborn 
+  10) Pylab
+  
+  
