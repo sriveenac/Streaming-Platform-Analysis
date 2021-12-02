@@ -16,7 +16,7 @@ from PIL import ImageTk,Image
 # In[2]:
 
 
-all = pd.read_csv('Data/all_data_processed.csv')
+all = pd.read_csv('../Data/all_data_processed.csv')
 all_ = all.fillna('')
 def lower(x):
     return str.lower(x.replace(' ', ''))
