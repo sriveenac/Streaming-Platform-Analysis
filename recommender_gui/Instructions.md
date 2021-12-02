@@ -1,4 +1,4 @@
-# To run the gui, simply run the following in your terminal while in the director where you save recommender_gui.py:
+# To run the gui, simply run the following in your terminal while in the recommender_gui directory:
   ```
   python3 recommender_gui.py
   ```
