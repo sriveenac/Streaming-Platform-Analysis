@@ -60,5 +60,12 @@ pip install requirements.txt
   8) matplotlib.pyplot 
   9) seaborn 
   10) Pylab
-  
+ ## Citations 
+ Netflix Dataset: https://www.kaggle.com/shivamb/netflix-shows
+ Amazon Prime Dataset: https://www.kaggle.com/shivamb/amazon-prime-movies-and-tv-shows
+ Disney+ Dataset: https://www.kaggle.com/shivamb/disney-movies-and-tv-shows
+ Hulu Dataset: https://www.kaggle.com/shivamb/hulu-movies-and-tv-shows
+ Recommender System Idea: 
+  Our Idea extend the below code to factor in all the platforms and consider the highest similarity across platforms 
+  https://www.kaggle.com/pranesh3/content-based-filtering
   
